@@ -18,7 +18,7 @@ const CarouselImageHolderF = () => {
       axios.get(configData['backend-server-url']+`/next?code=`+configData['image-code'])
       .then(res => {
         const imageData = res.data;
-        console.log(imageData);
+        // console.log(imageData);
         setImageData(imageData);
       }
       )

@@ -25,7 +25,7 @@ class CarouselText extends React.Component {
       axios.get(configData['weather-server-url'])
       .then(res => {
         const resData = res.data;
-        console.log(resData);
+        // console.log(resData);
         this.setState({ tempData: resData });
       }
       )
