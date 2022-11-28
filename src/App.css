@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0');
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.my-image{
+  width: -webkit-fill-available;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.main-container{
+  height: 100vh;
+  position: absolute;
+  width: -webkit-fill-available;
+}
+
+.loading-area{
+  margin-top: 25%;
+}
+
+/*
+source
+http://stackoverflow.com/a/23935891/3853728
+*/
+
+.img-gradient{
+  position:relative;
+}
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  /* background: -moz-linear-gradient(top, rgb(206, 211, 214) 0%, rgba(0, 0, 0, 0.5) 100%); FF3.6+ */
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.5)), color-stop(100%,rgb(206, 211, 214))); Chrome,Safari4+ */
+  /* background: -webkit-linear-gradient(top, rgb(206, 211, 214) 0%,rgba(0, 0, 0, 0.5) 100%); Chrome10+,Safari5.1+ */
+  /* background: -o-linear-gradient(top, rgb(206, 211, 214) 0%,rgba(0, 0, 0, 0.5) 100%); Opera 11.10+ */
+  /* background: -ms-linear-gradient(top, rgb(206, 211, 214) 0%,rgba(0, 0, 0, 0.5) 100%); IE10+ */
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0) 100%); 
+}
+.carousel-image{
+  display:block;
+  object-fit: cover;
+  /* object-position: 50% 0; */
+}
+
+.carousel-image-por{
+  display:block;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+.dualImgPortrait img:nth-child(1) {
+  margin-right: 5px;
+}
+
+.content-box{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  padding: 2rem 0;
+  text-shadow: 2px 2px 4px #000000;
+  width: -webkit-fill-available;
+}
+
+.dualImgPortrait{
+  display: flex;
+}
+
+.content-box .description-box{
+  flex:2;
+  z-index: 1;
+  text-align: left;
+  align-self: self-end;
+  padding-left: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+
+.content-box .time-box{
+  flex:1;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2rem;
+  font-family: 'Caveat', cursive;
+}
+
+#time{
+  font-size: 5rem;
+}
+
+#temp{
+  font-size: 2.5rem;
+}
+
+.content-box .description-box p{
+  margin: 0px;;
+}
+
+.content-box .time-box p{
+  margin: 0px;;
+}
+
+.unit{
+  font-size: 2rem;
+}
+
+#date-string{
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
+}
+
+.loaderContent{
+  overflow: hidden;
+  height: 100vh;
+}
+
+.loaderContent img{
+  height: 100vh;
+  width: -webkit-fill-available;
 }

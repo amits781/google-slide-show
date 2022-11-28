@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+#API Key
+3ccb306a22002aae958477495ce158cd
+http://api.positionstack.com/v1/forward?access_key=3ccb306a22002aae958477495ce158cd&query=40.7638435,-73.9729691
+
+#Weather API Key
+XMLMSC57AFFCESSGB497B5RRV
+https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/bhagalpur/today?unitGroup=metric&elements=temp%2Cconditions&include=current&key=XMLMSC57AFFCESSGB497B5RRV&contentType=json
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
