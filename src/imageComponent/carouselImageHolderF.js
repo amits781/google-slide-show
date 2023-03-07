@@ -22,7 +22,7 @@ const CarouselImageHolderF = () => {
         setImageData(imageData);
       }
       )
-    }, 10000)
+    }, configData['slide-time'])
 
     return () => clearInterval(interval);
   }, [])
