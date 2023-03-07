@@ -5,7 +5,7 @@ class CarouselImageElement extends React.Component {
 
   render() {
     const myElement =
-      <div className="main-container">
+      <div className="main-container no-cursor">
         {
           <div>
             <img style={{

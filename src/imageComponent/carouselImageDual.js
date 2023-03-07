@@ -5,7 +5,7 @@ class CarouselDualImageElement extends React.Component {
 
   render() {
     const myElement =
-      <div className="main-container">
+      <div className="main-container no-cursor">
         <div>
           <div className='dualImgPortrait'>
             {this.props.image.images.map((image, index) =>

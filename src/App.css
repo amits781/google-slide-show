@@ -169,3 +169,7 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
   height: 100vh;
   width: -webkit-fill-available;
 }
+
+.no-cursor{
+  cursor: none;
+}
